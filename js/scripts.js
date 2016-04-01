@@ -33,13 +33,11 @@ $(function(event){
 		event.preventDefault();
 		$("#resultT").text("");
 		var number = parseFloat($("#number").val());
-<<<<<<< HEAD
 			
-		
-=======
+
 			$("#result").hide();
 			$("#resultT").text("");
->>>>>>> refs/remotes/origin/master
+
 		
 		if(Number.isInteger(number)){
 			var result = pingPong(number);
