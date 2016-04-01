@@ -3,18 +3,19 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+     <link href="css/animation.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.2.js"></script>
     <script src="js/scripts.js"></script>
     <title>PingPong</title>
   </head>
   <body>
-  <div class="jumbotron">
-    <h1 id="header">Ping-Pong</h1>
+  <div class="jumbotron fadeInDown">
+    <h1 id="header" class="rollIn">Ping-Pong</h1>
   </div>
     <div class="container">
       <div class="row">
-       <div class="col-md-3" id="leftsidebar">
-       <div id="content">
+       <div class="col-md-3 fadeInLeft" id="leftsidebar">
+       <div id="content" class="bounceInUp">
           <h2>About Ping Pong</h2>
           <h3>Created By:</h3>
           <h4>Garrett Biernat</h4>
@@ -24,7 +25,7 @@
           <h4>Intro</h4>
         </div>
        </div>
-       <div class="col-md-9 main">
+       <div class="col-md-9 main rotateInDownLeft">
        <h1>Let's play!</h1>
        <h3>Rules:</h3>
        <p class="lead">Ping Pong will count up to your number from 1 with the following exceptions:</p>

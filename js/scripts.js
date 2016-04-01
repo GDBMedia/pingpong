@@ -1,4 +1,5 @@
 function pingPong (num){
+	performance.now()
  var arrayOfNums = [];
  var z = 1;
  for(var i = 0; z < num+1; i++){
@@ -21,17 +22,32 @@ function pingPong (num){
 	
 }
 $(function(event){
-	$(".jumbotron").slideDown(600, function(){
-		$("#leftsidebar").animate({width:'toggle'},600, function(){
-			$("#content").fadeIn(1300);
-			$(".main").fadeIn(1300);
-			$("#header").fadeIn(1300);
-		});
+	$("body")
+	.queue(function(next){
+		$(".jumbotron").addClass("animated")
+		next();
+	}).queue(function(next){
+		$("#header").addClass("animated");
+		next();
+	}).queue(function(next){
+		$("#leftsidebar").addClass("animated");
+		next();
+	}).delay(800).queue(function(next){
+		$("#content").show();
+		$("#content").addClass("animated");
+		next();
+	}).queue(function(next){
+		$(".main").show();
+		$(".main").addClass("animated");
+		next();
 	});
 
 	$("#submit").click(function(event){
+
 		event.preventDefault();
 		$("#resultT").text("");
+		$("#result").removeClass("lightSpeedIn");
+		$("#result").removeClass("animated");
 		var number = parseFloat($("#number").val());
 			
 
@@ -40,8 +56,15 @@ $(function(event){
 
 		
 		if(Number.isInteger(number)){
+			console.log("start function");
+			var start = +new Date();  // log start timestamp
 			var result = pingPong(number);
-			$("#result").fadeIn(2000);
+			var end =  +new Date();  // log end timestamp
+			var diff = end - start;
+			console.log(diff);
+			$("#result").show();
+			$("#result").addClass("lightSpeedIn");
+			$("#result").addClass("animated");
 		}else{
 			$("#group").addClass("has-error");
 		}	
