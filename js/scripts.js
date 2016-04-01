@@ -21,15 +21,23 @@ function pingPong (num){
 	
 }
 $(function(event){
+	$(".jumbotron").slideDown(600, function(){
+		$("#leftsidebar").animate({width:'toggle'},600, function(){
+			$("#content").fadeIn(1300);
+			$(".main").fadeIn(1300);
+			$("#header").fadeIn(1300);
+		});
+	});
+
 	$("#submit").click(function(event){
 		event.preventDefault();
 		var number = parseFloat($("#number").val());
-			
+			$("#result").hide();
 			$("#resultT").text("");
 		
 		if(Number.isInteger(number)){
 			var result = pingPong(number);
-			$("#result").show();
+			$("#result").fadeIn(2000);
 		}else{
 			$("#group").addClass("has-error");
 		}	
