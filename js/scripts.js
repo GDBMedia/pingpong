@@ -31,9 +31,13 @@ $(function(event){
 
 	$("#submit").click(function(event){
 		event.preventDefault();
+		$("#resultT").text("");
 		var number = parseFloat($("#number").val());
+			
+
 			$("#result").hide();
 			$("#resultT").text("");
+
 		
 		if(Number.isInteger(number)){
 			var result = pingPong(number);
