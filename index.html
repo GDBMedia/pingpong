@@ -8,22 +8,44 @@
     <title>PingPong</title>
   </head>
   <body>
+  <div class="jumbotron">
+    <h1>Ping Pong</h1>
+  </div>
     <div class="container">
-      <h1>Ping Pong</h1>
-
-      <form id="pingpong">
+      <div class="row">
+       <div class="col-md-3" id="leftsidebar">
+          <h2>About Ping Pong</h2>
+          <h3>Created By:<h3>
+          <h4>Garrett Biernat</h4>
+          <h3>GitHub Username/URL:</h3>
+          <h4><a href="https://github.com/GDBMedia">gdbmedia</a></h4>
+          <h3>Level 1 Test for:</h3>
+          <h4>Intro</h4>
+       </div>
+       <div class="col-md-9 main">
+       <h1>Let's play!</h1>
+       <h3>Rules:</h3>
+       <p class="lead">Ping Pong will count up to your number from 1 with the following exceptions:</p>
+       <ol>
+         <li>Numbers divisible by 3 become "ping"</li>
+         <li>Numbers divisible by 5 become "pong"</li>
+         <li>Numbers divisible by 3 and 5 become "pingpong"</li>
+       </ol>
+      <form id="pingpong" class="form-inline">
         <div id="group" class="form-group">
-          <label for="number" class="control-label">enter a number to count to</label>
+          <label for="number" class="control-label">Enter your number here:</label>
           <input id="number" class="form-control" type="text">
         </div>
 
-        <button type="submit" class="btn" id="submit">count!</button>
+        <button type="submit" class="btn btn-lg" id="submit">Ping Pong!</button>
       </form>
 
       <div id="result">
         <ul id="resultT">
           
         </ul>
+        </div>
+        </div>
       </div>
     </div>
   </body>

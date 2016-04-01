@@ -32,6 +32,10 @@ $(function(event){
 			$("#group").addClass("has-error");
 		}	
 	});
+	$("#group").click(function(event){
+		event.preventDefault();
+		$("#group").removeClass("has-error");
+	});
 });
 
 

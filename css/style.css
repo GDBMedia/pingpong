@@ -1,3 +1,67 @@
 #result{
 	display: none;
 }
+.jumbotron{
+	background-color: #f4deb5;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 3em;
+}
+.jumbotron h1{
+	font-weight: bold;
+}
+body{
+	background-color: #e6e6e6;
+}
+#leftsidebar{
+	background-color: #90bb90;
+	padding-right: 1em;
+	height: 55em;
+}
+.container{
+	width: 99%;
+	margin-left: 0;
+	height: 100%;
+}
+.row{
+	height: 100%;
+}
+#leftsidebar h3{
+	font-size: 2em;
+	color: #f4deb5;
+	font-weight: bold;
+}
+h3{
+	font-weight: bold;
+}
+h1{
+	font-size: 3em;
+	font-weight: bold;
+}
+#leftsidebar h2{
+	font-weight: bold;
+}
+#leftsidebar h4{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: white;
+}
+.lead{
+	font-size: 1.5em;
+}
+ol{
+	font-size: 1.5em;
+}
+label{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.main{
+	padding-left: 4em;
+}
+ul{
+	font-size: 1.2em;
+}
+button{
+	background-color: #bdbdbd;
+}
