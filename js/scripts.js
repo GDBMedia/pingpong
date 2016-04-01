@@ -23,9 +23,10 @@ function pingPong (num){
 $(function(event){
 	$("#submit").click(function(event){
 		event.preventDefault();
+		$("#resultT").text("");
 		var number = parseFloat($("#number").val());
 			
-			$("#resultT").text("");
+		
 		
 		if(Number.isInteger(number)){
 			var result = pingPong(number);
