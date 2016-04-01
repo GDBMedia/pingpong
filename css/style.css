@@ -6,6 +6,7 @@
 	text-align: center;
 	font-weight: bold;
 	margin-bottom: 3em;
+	padding: 4em;
 }
 .jumbotron h1{
 	font-weight: bold;
@@ -39,6 +40,7 @@ h1{
 	font-weight: bold;
 }
 #leftsidebar h2{
+	color: black;
 	font-weight: bold;
 }
 #leftsidebar h4{

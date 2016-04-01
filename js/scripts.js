@@ -1,6 +1,6 @@
-function pingpong (num){
+function pingPong (num){
  var arrayOfNums = [];
- var z = 1
+ var z = 1;
  for(var i = 0; z < num+1; i++){
  	if(z%15 === 0){
  		arrayOfNums[i] = "PingPong";
@@ -15,7 +15,7 @@ function pingpong (num){
  		arrayOfNums[i] = z;
  	}
  	$("#resultT").append("<li>"+arrayOfNums[i]+"</li>");
- 	z++
+ 	z++;
  }
 
 	
@@ -24,14 +24,17 @@ $(function(event){
 	$("#submit").click(function(event){
 		event.preventDefault();
 		var number = parseFloat($("#number").val());
+			
 			$("#resultT").text("");
+		
 		if(Number.isInteger(number)){
-			var result = pingpong(number);
+			var result = pingPong(number);
 			$("#result").show();
 		}else{
 			$("#group").addClass("has-error");
 		}	
 	});
+	
 	$("#group").click(function(event){
 		event.preventDefault();
 		$("#group").removeClass("has-error");
