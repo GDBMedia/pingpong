@@ -1,10 +1,6 @@
 # _Ping-Pong_
 
-<<<<<<< HEAD
-#### _A webpage that counts from 1 to a user defined number, 3/25_
-=======
 #### _A webpage that counts from 1 to a user defined number, 4/1_
->>>>>>> refs/remotes/origin/master
 
 #### By _**Garrett Biernat**_
 
